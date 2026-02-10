@@ -3,149 +3,192 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ha Yoon Shin</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link 
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;600&display=swap" 
-    rel="stylesheet" />
-
-    <!-- Font Awesome for LinkedIn icon -->
+    <!-- Font Awesome (LinkedIn icon) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
+    <!-- Devicon (language logos) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
-    <title>Ha Yoon Shin</title>
   </head>
 
   <body>
-    <nav>
-      <p>Ha Yoon Shin</p>
-      <p><a href="contact.html">Contact Ha Yoon Shin</a></p>
+    <!-- NAV -->
+    <nav class="nav">
+      <p class="nav-name">Ha Yoon Shin</p>
+      <p class="nav-link"><a href="contact.html">Contact</a></p>
     </nav>
 
-    <header>
+    <!-- HERO -->
+    <section class="hero container">
       <h1>Ha Yoon Shin</h1>
 
       <img
+        class="headshot"
         src="images/headshot.jpg"
         alt="Headshot of Ha Yoon Shin"
-        width="180"
+        width="220"
+        height="220"
       />
-    </header>
 
-    <p class="address">
-      400 Riverbend Parkway, Athens, GA 30605 &middot; (678) 579-2668 &middot;
-      hs21520@uga.edu
-    </p>
+      <p class="hero-meta">
+        400 Riverbend Parkway, Athens, GA 30605 &middot; (678) 579-2668 &middot;
+        hs21520@uga.edu
+      </p>
 
-    <p class="tagline">I love working in a team, just like in Volleyball.</p>
-
-    <hr />
-
-    <section>
-      <h3>Education</h3>
-      <dl>
-        <dt>University of Georgia</dt>
-        <dd>GPA: 3.3</dd>
-
-        <dt>Bachelor of Science in Computer Science</dt>
-        <dd>Graduation Date: December 2026</dd>
-      </dl>
+      <p class="hero-summary">
+        I’m an avid learner in computer science with a focus on building strong software
+        foundations. Outside of coursework and personal projects, I spend a lot of time
+        playing volleyball and bring that same team-first mindset—communication,
+        consistency, and leadership—into collaborative engineering work.
+      </p>
     </section>
 
-    <section>
-      <h3>Honors and Awards</h3>
-      <dl>
-        <dt>Dean's List</dt>
-        <dd>2023</dd>
+    <div class="container">
+      <!-- ABOUT -->
+      <section class="card-section section-about">
+        <h2>About Me</h2>
+        <p>
+          Hello, my name is Ha Yoon. I’m a computer science student who enjoys learning
+          by building—whether that’s implementing core data structures, working through
+          systems programming problems, or polishing front-end projects. When I’m not
+          studying, I’m usually playing volleyball. Team sports have taught me how to
+          communicate under pressure, support teammates, and stay consistent—skills I
+          plan to bring into my future career in computer science.
+        </p>
+      </section>
 
-        <dt>Zell Miller Scholarship</dt>
-        <dd>2021</dd>
-      </dl>
-    </section>
+      <!-- EDUCATION -->
+      <section class="card-section section-education">
+        <h2>Education</h2>
+        <dl class="two-col">
+          <dt>University of Georgia</dt>
+          <dd>GPA: 3.3</dd>
 
-    <section>
-      <h3>Skills</h3>
-      <ul>
-        <li>C++</li>
-        <li>Java</li>
-        <li>Python</li>
-        <li>C</li>
-      </ul>
-    </section>
+          <dt>Bachelor of Science in Computer Science</dt>
+          <dd>Graduation: December 2026</dd>
+        </dl>
+      </section>
 
-    <section>
-      <h3>Leadership and Experience</h3>
-      <dl>
-        <dt>
-          <a
-            href="https://www.instagram.com/fnfvball?igsh=MWd4d3NjcTk2dWFzMw=="
-            >FNF Volleyball Cofounder</a
-          >
-        </dt>
-        <dd>2023–Present</dd>
+      <!-- HONORS -->
+      <section class="card-section section-honors">
+        <h2>Honors &amp; Awards</h2>
+        <dl class="two-col">
+          <dt>Dean's List</dt>
+          <dd>2023</dd>
 
-        <dt>Volunteer at C2M</dt>
-        <dd>2022–2023</dd>
-      </dl>
-    </section>
+          <dt>Zell Miller Scholarship</dt>
+          <dd>2021</dd>
+        </dl>
+      </section>
 
-    <section>
-      <h3>Projects</h3>
+      <!-- SKILLS -->
+      <section class="card-section section-skills">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li><i class="devicon-cplusplus-plain"></i> C++</li>
+          <li><i class="devicon-java-plain"></i> Java</li>
+          <li><i class="devicon-python-plain"></i> Python</li>
+          <li><i class="devicon-c-plain"></i> C</li>
+        </ul>
+      </section>
 
-      <div class="three-col">
-        <div class="card">
-          <h3>Crossword Puzzle Solver</h3>
-          <img
-            src="images/proj_img1.jpg"
-            alt="Graphic representing a crossword puzzle solver project"
-            width="260"
-          />
-          <ul>
-            <li>Built with C</li>
-            <li>Parsed .puz files and processed command scripts for automated testing</li>
-          </ul>
+      <!-- LEADERSHIP -->
+      <section class="card-section section-experience">
+        <h2>Leadership &amp; Experience</h2>
+        <dl class="experience">
+          <dt>
+            <a
+              href="https://www.instagram.com/fnfvball?igsh=MWd4d3NjcTk2dWFzMw=="
+              target="_blank"
+              rel="noopener"
+              ><strong>FNF Volleyball Cofounder</strong></a
+            >
+          </dt>
+          <dd>
+            2023–Present
+            <ul>
+              <li>Co-manage a volleyball community and coordinate sessions and participation.</li>
+              <li>Apply teamwork, communication, and leadership through organizing and collaboration.</li>
+            </ul>
+          </dd>
+
+          <dt><strong>Volunteer at C2M</strong></dt>
+          <dd>
+            2022–2023
+            <ul>
+              <li>Supported community initiatives through consistent volunteer work and teamwork.</li>
+            </ul>
+          </dd>
+        </dl>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="card-section section-projects">
+        <div class="projects-head">
+          <h2>Projects</h2>
+          <p class="muted">
+            Selected projects demonstrating systems programming, data structures, and software design.
+          </p>
         </div>
 
-        <div class="card">
-          <h3>Connect Four Model</h3>
-          <img
-            src="images/proj_img2.jpg"
-            alt="Graphic representing a Connect Four model project"
-            width="260"
-          />
-          <ul>
-            <li>Built in Java</li>
-            <li>Validated board dimensions and enforced game rules through testing</li>
-          </ul>
-        </div>
+        <div class="three-col">
+          <article class="project-card">
+            <img
+              src="images/proj_img1.jpg"
+              alt="Graphic representing a crossword puzzle solver project"
+            />
+            <h3>Crossword Puzzle Solver</h3>
+            <ul>
+              <li>Built with C</li>
+              <li>Parsed .puz files and processed command scripts for automated testing</li>
+            </ul>
+          </article>
 
-        <div class="card">
-          <h3>Moving Pictures Animation Renderer</h3>
-          <img
-            src="images/proj_img3.jpg"
-            alt="Graphic representing an animation renderer project"
-            width="260"
-          />
-          <ul>
-            <li>Built in C++</li>
-            <li>Parsed a custom animation format and rendered frames</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+          <article class="project-card">
+            <img
+              src="images/proj_img2.jpg"
+              alt="Graphic representing a Connect Four model project"
+            />
+            <h3>Connect Four Model</h3>
+            <ul>
+              <li>Built in Java</li>
+              <li>Validated board dimensions and enforced game rules through testing</li>
+            </ul>
+          </article>
 
-    <footer>
+          <article class="project-card">
+            <img
+              src="images/proj_img3.jpg"
+              alt="Graphic representing an animation renderer project"
+            />
+            <h3>Moving Pictures Animation Renderer</h3>
+            <ul>
+              <li>Built in C++</li>
+              <li>Parsed a custom animation format and rendered frames</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
       <p>
-        &copy; 2026 <a href="contact.html">Ha Yoon Shin</a>
-        &middot;
+        &copy; 2026 <a href="contact.html">Ha Yoon Shin</a> &#9830;
         <a
           href="https://www.linkedin.com/in/ha-yoon-shin-6447b5264/"
           target="_blank"
           rel="noopener"
+          aria-label="LinkedIn"
         >
           <i class="fa-brands fa-linkedin"></i>
         </a>
@@ -153,4 +196,3 @@
     </footer>
   </body>
 </html>
-
