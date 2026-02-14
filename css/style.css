@@ -1,3 +1,4 @@
+/* style.css */
 :root {
   --bg: #f6f8fb;
   --card: #ffffff;
@@ -5,9 +6,9 @@
   --muted: #56657a;
   --line: #dfe7f3;
 
-  --nav-bg: #0b1220;      /* dark bar like the example */
+  --nav-bg: #0b1220; /* dark bar like the example */
   --nav-text: #e9f0ff;
-  --accent: #0b2a6b;      /* dark blue */
+  --accent: #0b2a6b; /* dark blue */
   --accent2: #123c8a;
 
   --shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
@@ -161,6 +162,29 @@ a:hover {
   border-left: 5px solid #0b2a6b;
 }
 
+/* Match headers to section accent colors (cohesion) */
+.section-about h2 {
+  color: #0b2a6b;
+}
+.section-education h2 {
+  color: #2446a3;
+}
+.section-honors h2 {
+  color: #0f766e;
+}
+.section-skills h2 {
+  color: #b45309;
+}
+.section-experience h2 {
+  color: #334155;
+}
+.section-projects h2 {
+  color: #7c3aed;
+}
+.section-contact h2 {
+  color: #0b2a6b;
+}
+
 /* Two-column description lists */
 .two-col {
   display: grid;
@@ -195,13 +219,20 @@ a:hover {
   gap: 8px;
 
   padding: 8px 12px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--accent);
   border-radius: 999px;
-  background: #fbfdff;
+  background: rgba(11, 42, 107, 0.05);
 
   color: var(--ink);
   font-weight: 700;
   font-size: 0.95rem;
+
+  transition: var(--transition);
+}
+
+.skills li:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
 }
 
 .skills i {
@@ -252,7 +283,9 @@ a:hover {
   overflow: hidden;
   box-shadow: var(--shadow);
 
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
 }
 
 .project-card:hover {
